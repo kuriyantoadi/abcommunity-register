@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="css/buttons.bootstrap4.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="css/adminlte.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="text-center my-3">
+        Data Member
+    </h1>
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Nama Lengkap</th>
+                                        <th>Nomor Identitas (KTA/SIM)</th>
+                                        <th>Tempat Lahir</th>
+                                        <th>Nomor Handphone/WA</th>
+                                        <th>Tanggal Lahir</th>
+                                        <th>Jenis Kelamin</th>
+                                        <th>Email</th>
+                                        <th>Alamat</th>
+                                        <th>Nama Jalan</th>
+                                        <th>Kota</th>
+                                        <th>Nomor Rumah</th>
+                                        <th>Negara</th>
+                                        <th>Ukuran Baju</th>
+                                        <th>Warna Kendaraan</th>
+                                        <th>Nomor Rangka</th>
+                                        <th>Nama Pemilik di STNK</th>
+                                        <th>Tahun Pembuatan</th>
+                                        <th>Nomor Mesin</th>
+                                        <th>Nomor Polisi</th>
+                                        <th>Foto SIM</th>
+                                        <th>Foto STNK</th>
+                                        <th>Tindakan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <th>0</th>
+                                            <th>nama_lengkap</th>
+                                            <th>nomor_identitas</th>
+                                            <th>tempat_lahir</th>
+                                            <th>nomor_hp</th>
+                                            <th>tanggal_lahir</th>
+                                            <th>jenis_kelamin</th>
+                                            <th>email</th>
+                                            <th>alamat</th>
+                                            <th>nama_jalan</th>
+                                            <th>kota</th>
+                                            <th>nomor_rumah</th>
+                                            <th>negara</th>
+                                            <th>ukuran_baju</th>
+                                            <th>warna_kendaraan</th>
+                                            <th>nomor_rangka</th>
+                                            <th>pemilik_stnk</th>
+                                            <th>tahun_pembuatan</th>
+                                            <th>nomor_mesin</th>
+                                            <th>nomor_polisi</th>
+                                            <th>foto_sim</th>
+                                            <th>foto_stnk</th>
+                                            <td>
+                                                <div class="text-center" style="white-space: nowrap;">
+                                                    <a href="" class="btn btn-sm btn-primary shadow-sm">Edit</a>
+                                                    <a href="" class="btn btn-sm btn-primary shadow-sm">Hapus</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="js/bootstrap.bundle.min.dt.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/dataTables.responsive.min.js"></script>
+    <script src="js/responsive.bootstrap4.min.js"></script>
+    <script src="js/dataTables.buttons.min.js"></script>
+    <script src="js/buttons.bootstrap4.min.js"></script>
+    <script src="js/jszip.min.js"></script>
+    <script src="js/pdfmake.min.js"></script>
+    <script src="js/vfs_fonts.js"></script>
+    <script src="js/buttons.html5.min.js"></script>
+    <script src="js/buttons.print.min.js"></script>
+    <script src="js/buttons.colVis.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="js/adminlte.min.js"></script>
+    
+    <!-- Page specific script -->
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true, "lengthChange": false, "autoWidth": false,
+                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
+    </script>
+</body>
+</html>
