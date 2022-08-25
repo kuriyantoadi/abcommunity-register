@@ -25,6 +25,7 @@ class Register extends CI_Controller
     public function register_up()
     {
         $no_identitas = $this->input->post('no_identitas');
+        $nama_lengkap = $this->input->post('nama_lengkap');
         $tmpt_lahir = $this->input->post('tmpt_lahir');
         $tgl_lahir = $this->input->post('tgl_lahir');
         $no_hp = $this->input->post('no_hp');
@@ -37,6 +38,7 @@ class Register extends CI_Controller
 
         $data_tambah = array(
             'no_identitas' => $no_identitas,
+            'nama_lengkap' => $nama_lengkap,
             'tmpt_lahir' => $tmpt_lahir,
             'tgl_lahir' => $tgl_lahir,
             'no_hp' => $no_hp,
@@ -62,8 +64,4 @@ class Register extends CI_Controller
     {
         $this->load->view('register/data_register');
     }
-
- 
-
-
 }

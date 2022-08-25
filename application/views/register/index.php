@@ -30,6 +30,10 @@
                     <input type="text" class="form-control" id="no_identitas" name="no_identitas" placeholder="Nomor Identitas">
                 </div>
                 <div class="mb-3">
+                    <label for="nomor_identitas" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap" placeholder="Nomor Identitas">
+                </div>
+                <div class="mb-3">
                     <label for="tempat_lahir" class="form-label">Tempat Lahir *</label>
                     <input type="text" class="form-control" id="tmpt_lahir" name="tmpt_lahir" placeholder="Tempat Lahir">
                 </div>
@@ -75,7 +79,7 @@
                     <label for="nomor_rumah" class="form-label">Provinsi</label>
                     <input type="text" class="form-control" id="provinsi" name="provinsi">
                 </div>
-               
+
             </section>
 
 
