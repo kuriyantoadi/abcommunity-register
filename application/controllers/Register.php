@@ -56,10 +56,9 @@ class Register extends CI_Controller
 
         $this->session->set_flashdata('msg', '
 						<div class="alert alert-info alert-dismissible fade show" role="alert">
-							<strong>Pendaftaran siswa berhasil</strong>
+							<strong>Pendaftaran Anggota berhasil</strong>
 						</div>');
-        // redirect('Home/jumlah_pendaftar');
-
+        redirect('register/data_anggota');
     }
 
     public function data_register()
