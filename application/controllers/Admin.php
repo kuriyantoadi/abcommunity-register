@@ -24,9 +24,15 @@ class Admin extends CI_Controller
         $this->load->view('admin/dashboard', $data);
     }
 
+    public function lihat_anggota()
+    {
+        $data['tampil'] = $this->M_admin->tampil_anggota();
+        $this->load->view('admin/lihat_anggota', $data);
+    }
+
     public function hapus_anggota($id_anggota)
     {
-        $id_anggota = array('id_admin' => $id_anggota);
+        $id_anggota = array('id_anggota' => $id_anggota);
 
         $success = $this->M_admin->hapus_anggota($id_anggota);
         $this->session->set_flashdata('msg', '

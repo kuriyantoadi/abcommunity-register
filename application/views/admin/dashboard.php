@@ -66,7 +66,7 @@
                                                 <div class="text-center" style="white-space: nowrap;">
                                                     <a href="<?= site_url('Admin/hapus_anggota/' . $row->id_anggota); ?>" class="btn btn-sm btn-danger shadow-sm" onclick="return confirm('Anda yakin menghapus data <?= $row->nama_lengkap ?> ?')">Hapus</a>
                                                     <!-- <a href="<?= site_url('Admin/hapus_anggota/' . $row->id_anggota); ?>" class="btn btn-sm btn-primary shadow-sm">Edit</a> -->
-                                                    <!-- <a href="<?= site_url('Admin/hapus_anggota/' . $row->id_anggota); ?>" class="btn btn-sm btn-success shadow-sm">Lihat</a> -->
+                                                    <a href="<?= site_url('Admin/lihat_anggota/' . $row->id_anggota); ?>" class="btn btn-sm btn-success shadow-sm">Lihat</a>
                                                 </div>
                                             </td>
                                         </tr>
