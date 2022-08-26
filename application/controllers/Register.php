@@ -22,6 +22,8 @@ class Register extends CI_Controller
         $this->load->view('register/index');
     }
 
+
+
     public function register_up()
     {
         $no_identitas = $this->input->post('no_identitas');
@@ -63,5 +65,11 @@ class Register extends CI_Controller
     public function data_register()
     {
         $this->load->view('register/data_register');
+    }
+
+    public function data_anggota()
+    {
+        $data['tampil'] = $this->M_register->data_anggota();
+        $this->load->view('register/data_anggota', $data);
     }
 }

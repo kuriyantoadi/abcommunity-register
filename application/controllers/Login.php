@@ -12,7 +12,7 @@ class Login extends CI_Controller
 
     public function index()
     {
-        $this->load->view('register/login');
+        $this->load->view('admin/login');
     }
 
     public function login_admin()
@@ -39,7 +39,7 @@ class Login extends CI_Controller
                 //   redirect('C_admin/home');
 
             } else {
-                $url = base_url('C_login/fa');
+                $url = base_url('admin/login');
                 echo $this->session->set_flashdata('msg', '
 
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
